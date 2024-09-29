@@ -1,49 +1,33 @@
-# Automatic-System-for-Driver-Drowsiness-Detection-using-Deep-Learning-
-Driver Drowsiness Detection System
+# Driver Drowsiness Detection System
 
-This project implements a deep learning-based driver drowsiness detection system using computer vision and transfer learning (Inception v3). The system monitors the driver’s eye state (open/closed) using a camera and alerts the driver if drowsiness is detected.
+This repository contains the implementation of a driver drowsiness detection system using deep learning. The model leverages **Inception v3** and **OpenCV** for real-time eye state detection (open or closed) and alerts the driver if drowsiness is detected.
 
-Features
+## Features
+- Real-time monitoring of the driver’s eye state.
+- Transfer learning with Inception v3 for high accuracy.
+- Detection of drowsiness using OpenCV’s Haar Cascade for facial features.
+- Achieves 87.4% accuracy on the test data.
 
-Real-time drowsiness detection
-Transfer learning using Inception v3
-Eye detection with OpenCV and Haar Cascade
-Achieves an accuracy of 87.4%
-Dataset
+## Abstract
+The drowsiness of drivers and careless driving are significant reasons for road accidents, which result in the loss of valuable lives. This system proposes using transfer learning with **Inception v3** and **OpenCV** to build an efficient driver drowsiness detection system. The system utilizes the **MRL Eye Dataset** to detect eye closure, indicating drowsiness, and alerts the driver.
 
-The model uses the MRL Eye Dataset for training.
+## Project Structure
+- `/data/`: Contains the MRL Eye dataset (or link to the dataset if it's too large).
+- `/models/`: Trained models and checkpoints.
+- `/scripts/`: Python scripts for training and inference.
+- `/output/`: Logs and results.
 
-Installation
+## Setup Instructions
 
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/username/Driver-Drowsiness-Detection.git
-cd Driver-Drowsiness-Detection
-Install dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Usage
+### Prerequisites
+- Python 3.x
+- TensorFlow
+- OpenCV
+- Numpy
+- Matplotlib
 
-Run the detection system:
-bash
-Copy code
-python driver_drowsiness_detection.py
-The system will use the camera to detect the driver’s eye state and trigger an alarm when drowsiness is detected.
-Model Architecture
-
-The project utilizes Inception v3 for feature extraction, and the facial features (eyes) are detected using OpenCV.
-
-Results
-
-Training Accuracy: 87.4%
-Test Accuracy: 87.4%
-Future Improvements
-
-Incorporating a better night vision camera
-Extending the model to detect additional facial features (e.g., yawning)
-License
-
-This project is licensed under the MIT License.
-
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/Driver-Drowsiness-Detection.git
+   cd Driver-Drowsiness-Detection
