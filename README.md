@@ -25,9 +25,17 @@ The drowsiness of drivers and careless driving are significant reasons for road 
 - OpenCV
 - Numpy
 - Matplotlib
+   
+## Results
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/Driver-Drowsiness-Detection.git
-   cd Driver-Drowsiness-Detection
+- **Training accuracy**: 87.4%
+- **Test accuracy**: 87.4%
+- The model detects drowsiness within a 0.4-second interval, ensuring a quick response and high success rate.
+
+## Future Work
+
+The following improvements are planned for future iterations of the system:
+
+1. **Low-light performance**: Enhance detection performance under low-light conditions by integrating a night vision camera.
+2. **Additional fatigue signs**: Extend the model to detect additional signs of fatigue such as yawning or head movements.
+3. **Alert system**: Develop an alert system that notifies loved ones when the driver is detected as drowsy.
